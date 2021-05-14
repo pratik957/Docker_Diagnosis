@@ -6,6 +6,6 @@ LABEL description="This is a spring boot application - Daignosis app" version="1
 
 COPY target/*.jar app.jar
 
-ENV RDS_HOSTNAME mysql_container
+ENV RDS_HOSTNAME mysql_container_diagnosis
 
 CMD ["java", "-jar", "app.jar"]
