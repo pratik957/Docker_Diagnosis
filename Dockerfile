@@ -4,8 +4,8 @@ MAINTAINER "pratik.tiwari@citiustech.com"
 
 LABEL description="This is a spring boot application - Daignosis app" version="1.0"
 
-COPY target/*.jar app.jar
+COPY target/*.jar Diagnosis-0.0.1-SNAPSHOT.jar
 
-ENV RDS_HOSTNAME mysql_container_diagnosis
+ENV RDS_HOSTNAME mysql-container
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "Diagnosis-0.0.1-SNAPSHOT.jar"]
